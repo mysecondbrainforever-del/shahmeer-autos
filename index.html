@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Shahmeer Autos | Premium Car Engine Oils & Filters Mian Channu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Orbitron for Logo/Headings (Exact flyer match), Exo 2 & Outfit for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Orbitron:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                screens: {
+                    'xs': '380px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#FFE066',
+                            400: '#FACC15',
+                            500: '#FFC107',
+                            600: '#E5A900',
+                            700: '#B28200'
+                        },
+                        dark: {
+                            950: '#07080A',
+                            900: '#0F1217',
+                            800: '#181E27',
+                            700: '#232A37',
+                            600: '#313A4D'
+                        }
+                    },
+                    fontFamily: {
+                        logo: ['Orbitron', 'sans-serif'],
+                        heading: ['Exo 2', 'sans-serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #07080A;
+            color: #F3F4F6;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        /* Dynamic Fluid Typography with clamp() to ensure zero overflow or awkward breaks on small mobiles */
+        .logo-font {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        .fluid-hero-title {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.85rem, 6.5vw, 3.8rem);
+            line-height: 1.15;
+        }
+
+        .fluid-section-title {
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 800;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            line-height: 1.2;
+        }
+
+        .heading-font {
+            font-family: 'Exo 2', sans-serif;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF5C2 0%, #FFC107 50%, #D49B00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-banner-border {
+            border: 1px solid rgba(255, 193, 7, 0.35);
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.15);
+        }
+        
+        .gold-card-hover {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+        }
+
+        @media (hover: hover) {
+            .gold-card-hover:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 12px 28px -5px rgba(255, 193, 7, 0.25);
+                border-color: rgba(255, 193, 7, 0.6);
+            }
+        }
+
+        .badge-pulse {
+            animation: pulse-glow 2.2s infinite ease-in-out;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(255, 193, 7, 0.3); }
+            50% { box-shadow: 0 0 22px rgba(255, 193, 7, 0.7); }
+        }
+
+        /* Prevent text overflow on narrow viewports */
+        p, h1, h2, h3, h4, span, button, a {
+            word-break: break-word;
+            overflow-wrap: anywhere;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07080A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232A37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFC107;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-black">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-dark-950/95 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                
+                <!-- Brand Logo (Accurate Font & Style matching Logo) -->
+                <a href="#" class="flex items-center space-x-2.5 sm:space-x-3 group min-w-0">
+                    <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-black font-black text-xl sm:text-2xl shadow-lg shrink-0 transition-transform group-hover:scale-105">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <div class="min-w-0">
+                        <span class="logo-font text-lg sm:text-2xl md:text-3xl tracking-tight text-white italic block leading-none truncate">
+                            SHAHMEER <span class="text-gold-500">AUTOS</span>
+                        </span>
+                        <span class="text-[9px] sm:text-[11px] text-gray-400 font-bold tracking-wider sm:tracking-widest uppercase block mt-0.5 truncate">
+                            Engine Oils & Filters • Mian Channu
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs xl:text-sm font-bold uppercase tracking-wider text-gray-300">
+                    <a href="#services" class="hover:text-gold-500 transition-colors">Services</a>
+                    <a href="#brands" class="hover:text-gold-500 transition-colors">Car Oils</a>
+                    <a href="#filters" class="hover:text-gold-500 transition-colors">Car Filters</a>
+                    <a href="#finder" class="hover:text-gold-500 transition-colors">Oil Finder</a>
+                    <a href="#faq" class="hover:text-gold-500 transition-colors">FAQs</a>
+                    <a href="#contact" class="hover:text-gold-500 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Phone CTA Button -->
+                <div class="hidden sm:flex items-center space-x-3 shrink-0">
+                    <a href="tel:03340002647" class="flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black font-extrabold px-3.5 py-2.5 sm:px-4 sm:py-2.5 rounded-xl shadow-md transition-all hover:scale-105 text-xs sm:text-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0334-0002647</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-200 hover:text-gold-500 p-2.5 rounded-lg border border-gray-800 bg-dark-900 focus:outline-none shrink-0" aria-label="Toggle Navigation Menu">
+                    <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-dark-900/95 border-b border-gray-800 px-4 pt-3 pb-6 space-y-3 transition-all">
+            <a href="#services" class="mobile-nav-link block text-gray-200 hover:text-gold-500 py-2 text-sm font-semibold border-b border-gray-800/50">Services & Guarantees</a>
+            <a href="#brands" class="mobile-nav-link block text-gray-200 hover:text-gold-500 py-2 text-sm font-semibold border-b border-gray-800/50">Car Engine Oils</a>
+            <a href="#filters" class="mobile-nav-link block text-gray-200 hover:text-gold-500 py-2 text-sm font-semibold border-b border-gray-800/50">Car Filters Offered</a>
+            <a href="#finder" class="mobile-nav-link block text-gray-200 hover:text-gold-500 py-2 text-sm font-semibold border-b border-gray-800/50">Car Oil Finder Tool</a>
+            <a href="#faq" class="mobile-nav-link block text-gray-200 hover:text-gold-500 py-2 text-sm font-semibold border-b border-gray-800/50">Frequently Asked Questions</a>
+            <a href="#contact" class="mobile-nav-link block text-gray-200 hover:text-gold-500 py-2 text-sm font-semibold border-b border-gray-800/50">Contact & Shop Location</a>
+            <a href="tel:03340002647" class="flex items-center justify-center space-x-2 bg-gold-500 text-black font-extrabold py-3.5 rounded-xl w-full text-sm mt-2 shadow-lg">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call 0334-0002647</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-8 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950">
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-72 sm:h-96 bg-gold-500/10 blur-[100px] pointer-events-none rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    
+                    <!-- Exclusively Cars Notice Banner -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-gold-500/10 border border-gold-500/40 badge-pulse max-w-full">
+                        <i class="fa-solid fa-car text-gold-400 text-xs sm:text-sm shrink-0"></i>
+                        <span class="text-[11px] sm:text-xs font-bold text-gold-400 uppercase tracking-wider truncate">
+                            Exclusively For Cars & SUVs • 4-Wheelers Only
+                        </span>
+                    </div>
+
+                    <!-- Main Headline with Exact Poster Taglines -->
+                    <h1 class="fluid-hero-title italic text-white tracking-tight">
+                        DRIVE BETTER WITH <br class="hidden xs:inline">
+                        <span class="gold-gradient-text">GENUINE CARE!</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans">
+                        Keep your car's engine running smooth with 100% original lubricant oils and premium filters at reasonable & affordable prices in <strong class="text-gold-400 font-bold">Mian Channu</strong>.
+                    </p>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-1 flex flex-wrap justify-center lg:justify-start gap-2.5 sm:gap-3 text-xs font-bold text-gray-200">
+                        <span class="flex items-center gap-1.5 bg-dark-800/90 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl border border-gray-700">
+                            <i class="fa-solid fa-certificate text-gold-500"></i> 100% Authentic Oils
+                        </span>
+                        <span class="flex items-center gap-1.5 bg-dark-800/90 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl border border-gray-700">
+                            <i class="fa-solid fa-wrench text-gold-500"></i> FREE Oil Change Service
+                        </span>
+                        <span class="flex items-center gap-1.5 bg-dark-800/90 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl border border-gray-700">
+                            <i class="fa-solid fa-filter text-gold-500"></i> Oil, Air & Fuel Filters
+                        </span>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5">
+                        <a href="https://wa.me/923340002647?text=Hi%20Shahmeer%20Autos,%20I%20want%20to%20inquire%20about%20Car%20Engine%20Oil%20and%20Free%20Oil%20Change!" target="_blank" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black font-extrabold text-xs sm:text-sm text-center shadow-xl transition-transform active:scale-95 flex items-center justify-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-lg sm:text-xl"></i>
+                            <span>Inquire via WhatsApp</span>
+                        </a>
+
+                        <a href="#finder" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-dark-800 hover:bg-dark-700 text-white font-bold text-xs sm:text-sm text-center border border-gray-700 hover:border-gold-500 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-sliders text-gold-500"></i>
+                            <span>Car Oil Finder Calculator</span>
+                        </a>
+                    </div>
+
+                    <!-- Proprietor Banner -->
+                    <div class="pt-2 text-xs text-gray-400 flex flex-wrap items-center justify-center lg:justify-start gap-2">
+                        <i class="fa-solid fa-user-shield text-gold-500"></i>
+                        <span>Proprietor: <strong class="text-white font-bold">Muhammad Amir Razaq</strong></span>
+                        <span class="hidden sm:inline">•</span>
+                        <span class="text-gold-400 font-bold block sm:inline w-full sm:w-auto">"Your Vehicle Our Responsibility!"</span>
+                    </div>
+                </div>
+
+                <!-- Right Hero Feature Card -->
+                <div class="lg:col-span-5 mt-4 lg:mt-0">
+                    <div class="relative bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 rounded-2xl sm:rounded-3xl p-5 sm:p-8 gold-banner-border">
+                        <div class="absolute -top-3 right-4 bg-gold-500 text-black font-black px-3.5 py-1 rounded-full text-[10px] sm:text-xs uppercase tracking-wider shadow-md">
+                            Mian Channu
+                        </div>
+                        
+                        <div class="text-center space-y-3 mb-6">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-2xl bg-gold-500/20 text-gold-500 flex items-center justify-center text-2xl sm:text-3xl">
+                                <i class="fa-solid fa-car-wrench"></i>
+                            </div>
+                            <h3 class="heading-font text-xl sm:text-2xl font-extrabold text-white">FREE OIL CHANGE SERVICE</h3>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Buy any car engine oil pack from Shahmeer Autos and enjoy <strong>100% FREE labor oil change service</strong> on the spot at Cinema Mor!
+                            </p>
+                        </div>
+
+                        <!-- Included Highlights -->
+                        <div class="space-y-2.5 border-t border-gray-700/80 pt-4 text-xs sm:text-sm font-semibold">
+                            <div class="flex items-center justify-between text-gray-200">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-500"></i> Labor Service</span>
+                                <span class="text-gold-400 font-extrabold">100% FREE</span>
+                            </div>
+                            <div class="flex items-center justify-between text-gray-200">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-500"></i> Car Filter Fitting</span>
+                                <span class="text-gold-400 font-extrabold">Included</span>
+                            </div>
+                            <div class="flex items-center justify-between text-gray-200">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-500"></i> Oil Level Check</span>
+                                <span class="text-gold-400 font-extrabold">Complimentary</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-4 border-t border-gray-700/80 text-center">
+                            <a href="#contact" class="text-gold-400 hover:text-gold-300 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot"></i> Cinema Mor, Mian Channu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Pillars Section -->
+    <section id="services" class="py-12 sm:py-16 bg-dark-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-2">
+                <span class="text-gold-500 text-xs font-extrabold tracking-widest uppercase">Shahmeer Autos Guarantee</span>
+                <h2 class="fluid-section-title text-white">Why Car Owners Trust Us</h2>
+                <p class="text-gray-400 text-xs sm:text-sm">Dedicated exclusively to passenger cars, hatchbacks, sedans, and SUVs in Mian Channu.</p>
+            </div>
+
+            <!-- Responsive 4-Column Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Card 1 -->
+                <div class="bg-dark-800 p-5 sm:p-6 rounded-2xl border border-gray-800 gold-card-hover text-center space-y-3">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl sm:text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="heading-font text-base sm:text-lg font-bold text-white">Original & Guaranteed Oils</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">100% Authentic Products guaranteed. Protect your car engine from counterfeit fluids.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-dark-800 p-5 sm:p-6 rounded-2xl border border-gray-800 gold-card-hover text-center space-y-3">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl sm:text-2xl">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="heading-font text-base sm:text-lg font-bold text-white">Reasonable & Affordable</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Best value for your money. Official retail rates with zero hidden charges.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-dark-800 p-5 sm:p-6 rounded-2xl border border-gray-800 gold-card-hover text-center space-y-3">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl sm:text-2xl">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <h3 class="heading-font text-base sm:text-lg font-bold text-white">Oil, Air & Fuel Filters</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Complete engine protection for Suzuki, Toyota, Honda, Hyundai & Daihatsu cars.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-dark-800 p-5 sm:p-6 rounded-2xl border border-gray-800 gold-card-hover text-center space-y-3">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl sm:text-2xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="heading-font text-base sm:text-lg font-bold text-white">Popular Car Brands</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Top genuine brands: Shell, SK ZIC, Caltex Havoline, Total Quartz under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Engine Oils Products Grid -->
+    <section id="brands" class="py-12 sm:py-16 bg-dark-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
+                <div>
+                    <span class="text-gold-500 text-xs font-extrabold tracking-widest uppercase">Genuine Motor Oils</span>
+                    <h2 class="fluid-section-title text-white">Popular Brands We Deal In</h2>
+                </div>
+                
+                <!-- Brand Filter Buttons with Horizontal Scroll on Mobile -->
+                <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none" id="brandFilterContainer">
+                    <button data-filter="all" class="brand-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-gold-500 text-black shrink-0 transition-all">All Oils</button>
+                    <button data-filter="shell" class="brand-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-dark-800 text-gray-300 hover:text-white border border-gray-700 shrink-0 transition-all">Shell</button>
+                    <button data-filter="zic" class="brand-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-dark-800 text-gray-300 hover:text-white border border-gray-700 shrink-0 transition-all">SK ZIC</button>
+                    <button data-filter="havoline" class="brand-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-dark-800 text-gray-300 hover:text-white border border-gray-700 shrink-0 transition-all">Havoline</button>
+                    <button data-filter="total" class="brand-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-dark-800 text-gray-300 hover:text-white border border-gray-700 shrink-0 transition-all">Total Quartz</button>
+                </div>
+            </div>
+
+            <!-- Product Cards Responsive Grid -->
+            <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6" id="productsGrid">
+                
+                <!-- Shell Helix Card -->
+                <div class="product-card bg-dark-900 border border-gray-800 rounded-2xl overflow-hidden gold-card-hover flex flex-col justify-between" data-brand="shell">
+                    <div class="p-4 sm:p-6 relative">
+                        <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-red-600/20 text-red-400 border border-red-500/30 text-[10px] sm:text-xs font-bold px-2.5 py-0.5 sm:py-1 rounded-full">Shell</span>
+                        <div class="w-full h-36 sm:h-44 bg-dark-800 rounded-xl mb-3 sm:mb-4 flex flex-col items-center justify-center p-3 border border-gray-800">
+                            <i class="fa-solid fa-oil-can text-red-500 text-4xl sm:text-5xl mb-2"></i>
+                            <span class="logo-font text-lg sm:text-xl text-white italic">Shell Helix</span>
+                            <span class="text-[11px] sm:text-xs text-red-400 font-bold">HX3 Motor Oil</span>
+                        </div>
+                        <h3 class="heading-font text-base sm:text-lg font-bold text-white mb-1">Shell Helix HX3</h3>
+                        <p class="text-xs text-gray-400 mb-3 leading-relaxed">Multi-grade motor oil formulated to clean and protect older passenger car engines.</p>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
+                            <span class="bg-dark-800 text-gold-400 px-2 sm:px-2.5 py-1 rounded-md font-mono font-bold">20W-50</span>
+                            <span class="bg-dark-800 text-gray-300 px-2 sm:px-2.5 py-1 rounded-md">3 Liters Pack</span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 sm:p-4 bg-dark-800/80 border-t border-gray-800 flex items-center justify-between gap-2">
+                        <span class="text-[10px] sm:text-[11px] text-gold-400 font-bold truncate"><i class="fa-solid fa-check-circle"></i> 100% Genuine</span>
+                        <a href="https://wa.me/923340002647?text=Hi%20Shahmeer%20Autos,%20I%20want%20to%20inquire%20about%20Shell%20Helix%20HX3%2020W-50%20for%20my%20car" target="_blank" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 bg-gold-500 text-black font-extrabold text-[11px] sm:text-xs rounded-lg hover:bg-gold-400 transition-colors shrink-0">Inquire</a>
+                    </div>
+                </div>
+
+                <!-- SK ZIC Card -->
+                <div class="product-card bg-dark-900 border border-gray-800 rounded-2xl overflow-hidden gold-card-hover flex flex-col justify-between" data-brand="zic">
+                    <div class="p-4 sm:p-6 relative">
+                        <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-blue-600/20 text-blue-400 border border-blue-500/30 text-[10px] sm:text-xs font-bold px-2.5 py-0.5 sm:py-1 rounded-full">SK ZIC</span>
+                        <div class="w-full h-36 sm:h-44 bg-dark-800 rounded-xl mb-3 sm:mb-4 flex flex-col items-center justify-center p-3 border border-gray-800">
+                            <i class="fa-solid fa-bottle-droplet text-blue-400 text-4xl sm:text-5xl mb-2"></i>
+                            <span class="logo-font text-lg sm:text-xl text-white italic">SK ZIC</span>
+                            <span class="text-[11px] sm:text-xs text-blue-400 font-bold">X7 Synthetic</span>
+                        </div>
+                        <h3 class="heading-font text-base sm:text-lg font-bold text-white mb-1">SK ZIC X7 Synthetic</h3>
+                        <p class="text-xs text-gray-400 mb-3 leading-relaxed">VHVI tech synthetic motor oil delivering high engine efficiency & cold-start protection.</p>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
+                            <span class="bg-dark-800 text-gold-400 px-2 sm:px-2.5 py-1 rounded-md font-mono font-bold">10W-40 / 5W-30</span>
+                            <span class="bg-dark-800 text-gray-300 px-2 sm:px-2.5 py-1 rounded-md">4 Liters Pack</span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 sm:p-4 bg-dark-800/80 border-t border-gray-800 flex items-center justify-between gap-2">
+                        <span class="text-[10px] sm:text-[11px] text-gold-400 font-bold truncate"><i class="fa-solid fa-check-circle"></i> 100% Genuine</span>
+                        <a href="https://wa.me/923340002647?text=Hi%20Shahmeer%20Autos,%20I%20want%20to%20inquire%20about%20SK%20ZIC%20X7%20Synthetic%20for%20my%20car" target="_blank" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 bg-gold-500 text-black font-extrabold text-[11px] sm:text-xs rounded-lg hover:bg-gold-400 transition-colors shrink-0">Inquire</a>
+                    </div>
+                </div>
+
+                <!-- Caltex Havoline Card -->
+                <div class="product-card bg-dark-900 border border-gray-800 rounded-2xl overflow-hidden gold-card-hover flex flex-col justify-between" data-brand="havoline">
+                    <div class="p-4 sm:p-6 relative">
+                        <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-amber-600/20 text-amber-400 border border-amber-500/30 text-[10px] sm:text-xs font-bold px-2.5 py-0.5 sm:py-1 rounded-full">Caltex</span>
+                        <div class="w-full h-36 sm:h-44 bg-dark-800 rounded-xl mb-3 sm:mb-4 flex flex-col items-center justify-center p-3 border border-gray-800">
+                            <i class="fa-solid fa-car-battery text-amber-500 text-4xl sm:text-5xl mb-2"></i>
+                            <span class="logo-font text-lg sm:text-xl text-white italic">Havoline</span>
+                            <span class="text-[11px] sm:text-xs text-amber-400 font-bold">Formula Deposit Shield</span>
+                        </div>
+                        <h3 class="heading-font text-base sm:text-lg font-bold text-white mb-1">Caltex Havoline Formula</h3>
+                        <p class="text-xs text-gray-400 mb-3 leading-relaxed">Deposit Shield Technology for thermal stability and reduced engine wear under heat.</p>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
+                            <span class="bg-dark-800 text-gold-400 px-2 sm:px-2.5 py-1 rounded-md font-mono font-bold">10W-30</span>
+                            <span class="bg-dark-800 text-gray-300 px-2 sm:px-2.5 py-1 rounded-md">3L / 4L Pack</span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 sm:p-4 bg-dark-800/80 border-t border-gray-800 flex items-center justify-between gap-2">
+                        <span class="text-[10px] sm:text-[11px] text-gold-400 font-bold truncate"><i class="fa-solid fa-check-circle"></i> 100% Genuine</span>
+                        <a href="https://wa.me/923340002647?text=Hi%20Shahmeer%20Autos,%20I%20want%20to%20inquire%20about%20Caltex%20Havoline%2010W-30%20for%20my%20car" target="_blank" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 bg-gold-500 text-black font-extrabold text-[11px] sm:text-xs rounded-lg hover:bg-gold-400 transition-colors shrink-0">Inquire</a>
+                    </div>
+                </div>
+
+                <!-- Total Quartz Card -->
+                <div class="product-card bg-dark-900 border border-gray-800 rounded-2xl overflow-hidden gold-card-hover flex flex-col justify-between" data-brand="total">
+                    <div class="p-4 sm:p-6 relative">
+                        <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-yellow-600/20 text-yellow-400 border border-yellow-500/30 text-[10px] sm:text-xs font-bold px-2.5 py-0.5 sm:py-1 rounded-full">Total</span>
+                        <div class="w-full h-36 sm:h-44 bg-dark-800 rounded-xl mb-3 sm:mb-4 flex flex-col items-center justify-center p-3 border border-gray-800">
+                            <i class="fa-solid fa-shield-cat text-gold-400 text-4xl sm:text-5xl mb-2"></i>
+                            <span class="logo-font text-lg sm:text-xl text-white italic">TOTAL</span>
+                            <span class="text-[11px] sm:text-xs text-yellow-400 font-bold">Quartz 9000 Energy</span>
+                        </div>
+                        <h3 class="heading-font text-base sm:text-lg font-bold text-white mb-1">Total Quartz 9000</h3>
+                        <p class="text-xs text-gray-400 mb-3 leading-relaxed">Fully synthetic car engine oil providing maximum cleanliness & extreme protection.</p>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
+                            <span class="bg-dark-800 text-gold-400 px-2 sm:px-2.5 py-1 rounded-md font-mono font-bold">5W-40</span>
+                            <span class="bg-dark-800 text-gray-300 px-2 sm:px-2.5 py-1 rounded-md">4 Liters Pack</span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 sm:p-4 bg-dark-800/80 border-t border-gray-800 flex items-center justify-between gap-2">
+                        <span class="text-[10px] sm:text-[11px] text-gold-400 font-bold truncate"><i class="fa-solid fa-check-circle"></i> 100% Genuine</span>
+                        <a href="https://wa.me/923340002647?text=Hi%20Shahmeer%20Autos,%20I%20want%20to%20inquire%20about%20Total%20Quartz%209000%205W-40%20for%20my%20car" target="_blank" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 bg-gold-500 text-black font-extrabold text-[11px] sm:text-xs rounded-lg hover:bg-gold-400 transition-colors shrink-0">Inquire</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Filters Section -->
+    <section id="filters" class="py-12 sm:py-16 bg-dark-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-2">
+                <span class="text-gold-500 text-xs font-extrabold tracking-widest uppercase">Complete Engine Protection</span>
+                <h2 class="fluid-section-title text-white">Car Filters We Offer</h2>
+                <p class="text-gray-400 text-xs sm:text-sm">High efficiency filtration for Japanese, European, and local passenger cars.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Oil Filter Card -->
+                <div class="bg-dark-800 p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-gray-800 gold-card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl sm:text-3xl mb-5">
+                            <i class="fa-solid fa-oil-can"></i>
+                        </div>
+                        <h3 class="heading-font text-xl sm:text-2xl font-bold text-white mb-1.5">Car Oil Filters</h3>
+                        <p class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">Cleaner Oil | Longer Engine Life</p>
+                        <p class="text-gray-300 text-xs sm:text-sm mb-5 leading-relaxed">
+                            Filters out metallic shavings and debris from circulating motor oil, protecting your car engine's internal pistons and bearings.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-xs text-gray-300 font-semibold border-t border-gray-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Fits Suzuki, Toyota, Honda & Nissan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> FREE Fitting with Oil Purchase</li>
+                    </ul>
+                </div>
+
+                <!-- Air Filter Card -->
+                <div class="bg-dark-800 p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-gray-800 gold-card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl sm:text-3xl mb-5">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h3 class="heading-font text-xl sm:text-2xl font-bold text-white mb-1.5">Car Air Filters</h3>
+                        <p class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">Cleaner Air | Better Performance</p>
+                        <p class="text-gray-300 text-xs sm:text-sm mb-5 leading-relaxed">
+                            Prevents dust and road grit from entering combustion chambers, ensuring maximum air intake efficiency and better fuel average.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-xs text-gray-300 font-semibold border-t border-gray-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Traps 99% airborne dust particles</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Improves Throttle & Acceleration</li>
+                    </ul>
+                </div>
+
+                <!-- Fuel Filter Card -->
+                <div class="bg-dark-800 p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-gray-800 gold-card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl sm:text-3xl mb-5">
+                            <i class="fa-solid fa-gas-pump"></i>
+                        </div>
+                        <h3 class="heading-font text-xl sm:text-2xl font-bold text-white mb-1.5">Car Fuel Filters</h3>
+                        <p class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">Smooth Ride | Better Mileage</p>
+                        <p class="text-gray-300 text-xs sm:text-sm mb-5 leading-relaxed">
+                            Protects costly EFI fuel injectors and pumps from rust and impurities, maintaining consistent fuel pressure and smooth idling.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-xs text-gray-300 font-semibold border-t border-gray-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Protects Petrol & Diesel Injectors</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Smooth Highway Driving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Oil Finder Section -->
+    <section id="finder" class="py-12 sm:py-16 bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-dark-900 border border-gold-500/30 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden">
+                
+                <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-8 space-y-2">
+                    <span class="text-gold-500 text-xs font-extrabold tracking-widest uppercase"><i class="fa-solid fa-car text-gold-500"></i> Car Recommendation Calculator</span>
+                    <h2 class="fluid-section-title text-white">Car Oil & Filter Finder</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm">Select your car manufacturer and engine mileage to find the exact recommended oil grade!</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                    <!-- Step 1: Car Brand Selection -->
+                    <div>
+                        <label for="carBrand" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">1. Select Car Brand / Category</label>
+                        <select id="carBrand" class="w-full bg-dark-800 border border-gray-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                            <option value="suzuki">Suzuki (Alto, Cultus, WagonR, Swift, Mehran)</option>
+                            <option value="toyota">Toyota (Corolla, Yaris, Fortuner, Vitz, Axio)</option>
+                            <option value="honda">Honda (Civic, City, BR-V, Vezel)</option>
+                            <option value="hyundai_kia">Hyundai & Kia (Sportage, Elantra, Picanto, Tucson)</option>
+                            <option value="daihatsu_imported">Daihatsu & 660cc Japanese Cars (Mira, Move, Tanto)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Mileage / Condition -->
+                    <div>
+                        <label for="carMileage" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">2. Engine Mileage / Condition</label>
+                        <select id="carMileage" class="w-full bg-dark-800 border border-gray-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                            <option value="new">Under 80,000 KM (Newer Engine / Eco Synthetic)</option>
+                            <option value="medium">80,000 KM - 150,000 KM (Balanced Condition)</option>
+                            <option value="high">Over 150,000 KM (High Mileage / Thick Protection)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Recommendation Output Card -->
+                <div id="recommendationResult" class="bg-dark-800 border border-gray-700 rounded-2xl p-4 sm:p-6">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+                        <div class="space-y-1 text-center sm:text-left w-full">
+                            <span class="text-[10px] sm:text-xs text-gold-400 font-bold uppercase tracking-widest block">Recommended Car Package</span>
+                            <h4 id="recTitle" class="heading-font text-lg sm:text-xl font-bold text-white">Total Quartz 9000 (5W-30) / SK ZIC X7 + Oil Filter</h4>
+                            <p id="recDesc" class="text-xs text-gray-300 leading-relaxed">Includes FREE oil change labor & filter fitting at Shahmeer Autos, Cinema Mor Mian Channu.</p>
+                        </div>
+                        <a id="recWhatsappBtn" href="https://wa.me/923340002647" target="_blank" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-black font-extrabold text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-lg flex items-center justify-center gap-2 shrink-0">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Inquire Package</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 sm:py-16 bg-dark-900 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 sm:mb-12 space-y-2">
+                <span class="text-gold-500 text-xs font-extrabold tracking-widest uppercase">Common Inquiries</span>
+                <h2 class="fluid-section-title text-white">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-3.5" id="faqContainer">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-dark-800 border border-gray-800 rounded-xl sm:rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center focus:outline-none gap-3">
+                        <span>How do I know the engine oil at Shahmeer Autos is 100% original?</span>
+                        <i class="fa-solid fa-chevron-down text-gold-500 text-xs sm:text-sm transition-transform shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-gray-700/50 pt-3">
+                        We deal exclusively in original sealed packs directly from authorized regional distributors for Shell, SK ZIC, Caltex Havoline, and Total. Every pack includes genuine security seals and QR codes for verification.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-dark-800 border border-gray-800 rounded-xl sm:rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center focus:outline-none gap-3">
+                        <span>Is the oil change service really 100% FREE?</span>
+                        <i class="fa-solid fa-chevron-down text-gold-500 text-xs sm:text-sm transition-transform shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-gray-700/50 pt-3">
+                        Yes! When you purchase your car engine oil from Shahmeer Autos at Cinema Mor, Mian Channu, our team changes your oil and fits your filters completely free of labor charge.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-dark-800 border border-gray-800 rounded-xl sm:rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center focus:outline-none gap-3">
+                        <span>How often should I change my car's oil and air filters?</span>
+                        <i class="fa-solid fa-chevron-down text-gold-500 text-xs sm:text-sm transition-transform shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-gray-700/50 pt-3">
+                        For synthetic oils (like 5W-30 or 10W-40), we recommend changing every 4,000 km to 5,000 km. Air and fuel filters should be inspected and changed every 2nd oil change or as per driving conditions in Mian Channu.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-dark-800 border border-gray-800 rounded-xl sm:rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center focus:outline-none gap-3">
+                        <span>Do you service bikes or motorcycles?</span>
+                        <i class="fa-solid fa-chevron-down text-gold-500 text-xs sm:text-sm transition-transform shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-gray-700/50 pt-3">
+                        No, Shahmeer Autos is specialized exclusively in <strong>Passenger Cars & 4-Wheelers</strong> (Suzuki, Toyota, Honda, Hyundai, Kia, Daihatsu).
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Footer -->
+    <footer id="contact" class="bg-dark-950 border-t border-gray-800 pt-12 sm:pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
+                
+                <!-- Contact Details Card -->
+                <div class="lg:col-span-5 space-y-5">
+                    <div>
+                        <span class="logo-font text-2xl sm:text-3xl text-white italic block mb-1">SHAHMEER <span class="text-gold-500">AUTOS</span></span>
+                        <p class="text-gold-400 text-xs font-bold uppercase tracking-widest">Deals in Engine Oils & Filters • Cars Only</p>
+                    </div>
+
+                    <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                        Keep your car engine running smooth! Visit us at Cinema Mor, Mian Channu for 100% guaranteed authentic oils and free oil change services.
+                    </p>
+
+                    <div class="space-y-4 text-xs sm:text-sm bg-dark-900 p-5 sm:p-6 rounded-2xl border border-gray-800">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-user-gear text-gold-500 text-base sm:text-lg mt-0.5 shrink-0"></i>
+                            <div>
+                                <span class="text-[10px] text-gray-400 block uppercase font-bold">Proprietor</span>
+                                <span class="font-bold text-white">Muhammad Amir Razaq</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-phone text-gold-500 text-base sm:text-lg mt-0.5 shrink-0"></i>
+                            <div>
+                                <span class="text-[10px] text-gray-400 block uppercase font-bold">Contact Phone Number</span>
+                                <a href="tel:03340002647" class="font-extrabold text-gold-400 hover:underline">0334-0002647</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-gold-500 text-base sm:text-lg mt-0.5 shrink-0"></i>
+                            <div>
+                                <span class="text-[10px] text-gray-400 block uppercase font-bold">Shop Location</span>
+                                <span class="font-bold text-white">Cinema Mor, Mian Channu, Punjab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct WhatsApp Inquiry Form -->
+                <div class="lg:col-span-7 bg-dark-900 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-gray-800">
+                    <h3 class="heading-font text-lg sm:text-xl font-bold text-white mb-1">Send Quick WhatsApp Inquiry</h3>
+                    <p class="text-xs text-gray-400 mb-5">Enter your car model and oil requirements to connect directly with Muhammad Amir Razaq.</p>
+
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="custName" class="block text-xs font-bold text-gray-300 mb-1">Your Name</label>
+                                <input type="text" id="custName" required placeholder="e.g. Ali Raza" class="w-full bg-dark-800 border border-gray-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label for="custVehicle" class="block text-xs font-bold text-gray-300 mb-1">Car Model & Year</label>
+                                <input type="text" id="custVehicle" required placeholder="e.g. Suzuki Cultus 2021 / Corolla" class="w-full bg-dark-800 border border-gray-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="custMsg" class="block text-xs font-bold text-gray-300 mb-1">Inquiry / Oil Requirement</label>
+                            <textarea id="custMsg" rows="3" required placeholder="Ask about oil prices, filter availability, or free oil change service..." class="w-full bg-dark-800 border border-gray-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-gold-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-black font-extrabold text-xs uppercase tracking-wider hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg flex items-center justify-center gap-2 active:scale-95">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Send WhatsApp Inquiry</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="mt-10 pt-6 border-t border-gray-800 text-center text-xs text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p>© Shahmeer Autos (Mian Channu). All Rights Reserved.</p>
+                <p class="text-gold-400 font-semibold"><i class="fa-solid fa-car"></i> Your Vehicle Our Responsibility!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMobileMenu() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuIcon.classList.remove('fa-bars');
+                mobileMenuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('fa-xmark');
+                mobileMenuIcon.classList.add('fa-bars');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('fa-xmark');
+                mobileMenuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Brand Product Filter Buttons
+        const filterBtns = document.querySelectorAll('.brand-filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-gold-500', 'text-black');
+                    b.classList.add('bg-dark-800', 'text-gray-300');
+                });
+                btn.classList.remove('bg-dark-800', 'text-gray-300');
+                btn.classList.add('bg-gold-500', 'text-black');
+
+                const filter = btn.getAttribute('data-filter');
+
+                productCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-brand') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Car Oil Calculator Logic
+        const carBrand = document.getElementById('carBrand');
+        const carMileage = document.getElementById('carMileage');
+        const recTitle = document.getElementById('recTitle');
+        const recDesc = document.getElementById('recDesc');
+        const recWhatsappBtn = document.getElementById('recWhatsappBtn');
+
+        function updateCarRecommendation() {
+            const brand = carBrand.value;
+            const condition = carMileage.value;
+
+            let oilText = "SK ZIC X7 (10W-40 Synthetic)";
+            let detailText = "Standard synthetic protection for Japanese & local passenger cars.";
+
+            if (brand === "daihatsu_imported" || condition === "new") {
+                oilText = "Total Quartz 9000 Energy (5W-30 / 5W-40)";
+                detailText = "Best fully synthetic oil for modern 660cc & low mileage car engines.";
+            } else if (brand === "suzuki" && condition === "medium") {
+                oilText = "Caltex Havoline Formula (10W-30 / 10W-40)";
+                detailText = "Deposit Shield formula designed for smooth Suzuki car driving.";
+            } else if (condition === "high") {
+                oilText = "Shell Helix HX3 (20W-50 Multi-grade)";
+                detailText = "Maximum anti-wear protection for high-mileage engines in hot weather.";
+            }
+
+            recTitle.innerText = `${oilText} + Genuine Car Filter`;
+            recDesc.innerText = `${detailText} (Includes FREE labor oil change service at Cinema Mor, Mian Channu).`;
+
+            const message = `Hi Shahmeer Autos! I need recommended oil for my car:\nBrand: ${carBrand.options[carBrand.selectedIndex].text}\nRecommended: ${oilText}`;
+            recWhatsappBtn.href = `https://wa.me/923340002647?text=${encodeURIComponent(message)}`;
+        }
+
+        carBrand.addEventListener('change', updateCarRecommendation);
+        carMileage.addEventListener('change', updateCarRecommendation);
+        updateCarRecommendation(); // Initialize
+
+        // FAQ Accordion Interaction
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // WhatsApp Direct Form Handler
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const vehicle = document.getElementById('custVehicle').value;
+            const msg = document.getElementById('custMsg').value;
+
+            const text = `Hi Shahmeer Autos!\nName: ${name}\nCar Model: ${vehicle}\nInquiry: ${msg}`;
+            const waUrl = `https://wa.me/923340002647?text=${encodeURIComponent(text)}`;
+            window.open(waUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
